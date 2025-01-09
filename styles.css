@@ -4,6 +4,13 @@ body, h1, h2, p {
     padding: 0;
 }
 
+img {
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+}
+
 /* Estilo geral */
 body {
     font-family: 'Arial', sans-serif;
@@ -37,9 +44,11 @@ header {
 .header-content img.header-image {
     width: 80px;
     height: auto;
-    border-radius: 8px; /* Mantém cantos arredondados, se desejar */
-    border: none; /* Remove qualquer borda */
-    box-shadow: none; /* Remove sombras, se aplicadas */
+    border: none; /* Remove bordas */
+    box-shadow: none; /* Remove sombras */
+    padding: 0; /* Remove qualquer espaçamento interno */
+    margin: 0; /* Remove qualquer espaçamento externo */
+    display: block; /* Evita comportamento de inline que pode causar borda invisível */
 }
 
 header p {
