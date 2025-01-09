@@ -68,33 +68,42 @@ main {
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 300px; /* Largura fixa */
+    height: 400px; /* Altura fixa para alinhar os cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribuir espaço interno */
     text-align: center;
     padding: 1.5rem;
     transition: transform 0.2s ease-in-out;
 }
+
 
 .panel-card:hover {
     transform: scale(1.05);
 }
 
 .panel-card img.panel-preview {
-    width: 100%; /* Preenche horizontalmente o card */
-    max-height: 150px; /* Limita a altura para manter proporção */
-    object-fit: cover; /* Garante que a imagem não fique distorcida */
+    width: 100%; /* Preenche a largura do card */
+    height: 150px; /* Altura fixa para todas as imagens */
+    object-fit: cover; /* Garante que as imagens mantenham proporção */
     border-radius: 5px;
     margin-bottom: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+
 .panel-card h2 {
-    margin-bottom: 0.5rem;
+    margin: 0.5rem 0; /* Espaço entre o título e os outros elementos */
+    font-size: 1.2rem;
     color: #4facfe;
+    flex-shrink: 0; /* Garante que o título não colapse */
 }
 
 .panel-card p {
-    margin-bottom: 1rem;
+    flex-grow: 1; /* Expande o parágrafo para ocupar espaço consistente */
     font-size: 0.9rem;
+    margin: 0.5rem 0;
 }
 
 .panel-card a {
@@ -104,7 +113,7 @@ main {
     padding: 0.5rem 1rem;
     border-radius: 5px;
     display: inline-block;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     transition: background 0.3s;
 }
 
