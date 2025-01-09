@@ -20,7 +20,7 @@ body {
 /* Cabeçalho */
 header {
     text-align: center;
-    background: linear-gradient(90deg, #002776, #0041a8);
+    background: linear-gradient(90deg, #002776, #0041a8) !important;
     color: white;
     padding: 2rem 1rem;
     margin-bottom: 2rem;
