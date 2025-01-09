@@ -19,10 +19,12 @@ body {
 
 /* Cabeçalho */
 header {
-    text-align: center;
-    background: linear-gradient(to right, #002776, #0041a8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background: linear-gradient(to right, #002776, #0041a8); 
     color: white;
-    padding: 2rem 1rem;
+    padding: 1rem 2rem;
     margin-bottom: 2rem;
 }
 
@@ -40,6 +42,7 @@ header {
     padding: 0; /* Remove qualquer espaçamento interno */
     margin: 0; /* Remove qualquer espaçamento externo */
     display: block; /* Evita comportamento de inline que pode causar borda invisível */
+    margin-left: 1rem; 
 }
 
 header p {
