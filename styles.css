@@ -22,23 +22,16 @@ body {
 /* Cabeçalho */
 header {
     text-align: center;
-    background: linear-gradient(to right, #4facfe, #00f2fe);
+    background: #002776; /* Azul Escuro Itaú */
     color: white;
     padding: 2rem 1rem;
     margin-bottom: 2rem;
 }
 
-.header-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
 .header-content h1 {
     font-size: 2rem;
     margin: 0;
+    color: white; /* Texto branco para contraste */
 }
 
 .header-content img.header-image {
