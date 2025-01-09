@@ -20,7 +20,7 @@ body {
 /* Cabeçalho */
 header {
     text-align: center;
-    background: #002776; /* Azul Escuro Itaú */
+    background: #002776 !important;
     color: white;
     padding: 2rem 1rem;
     margin-bottom: 2rem;
