@@ -79,8 +79,9 @@ main {
 }
 
 .panel-card img.panel-preview {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Preenche horizontalmente o card */
+    max-height: 150px; /* Limita a altura para manter proporção */
+    object-fit: cover; /* Garante que a imagem não fique distorcida */
     border-radius: 5px;
     margin-bottom: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
