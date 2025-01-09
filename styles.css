@@ -35,7 +35,7 @@ header {
 }
 
 .header-content img.header-image {
-    width: 80px; /* Ajuste conforme necessário */
+    width: 80px;
     height: auto;
     border-radius: 8px;
     border: 2px solid white;
@@ -76,6 +76,14 @@ main {
 
 .panel-card:hover {
     transform: scale(1.05);
+}
+
+.panel-card img.panel-preview {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .panel-card h2 {
